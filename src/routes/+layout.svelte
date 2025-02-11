@@ -29,7 +29,7 @@
 
 {@render children()}
 
-<footer>
+<footer class="m-4 text-center">
     <p>
         ⓒ 2025 GDGoC SCHU BIOMARKER TEAM.
         <a href="/oss" class="link">Open Source License</a>
