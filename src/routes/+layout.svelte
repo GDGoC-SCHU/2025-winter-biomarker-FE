@@ -19,10 +19,11 @@
       <a class="btn btn-ghost text-xl" href="/">HEA</a>
     </div>
     <div class="drawer-side">
-        <label for="menu" aria-label="메뉴 닫기" class="drawer-overlay"></label>
-        <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+      <label for="menu" aria-label="메뉴 닫기" class="drawer-overlay"></label>
+      <section class="flex justify-between bg-base-200 min-h-full flex-col">
+        <ul class="menu text-base-content w-80 p-4">
             <li class="text-xl">
-              {#if !data}
+              {#if !data || !data.email}
               <a href="/login">먼저<br>로그인하세요 &gt;</a>
               {:else if data?.email}
               <a href="/manage">{data.email}님<br>반갑습니다</a>
@@ -47,6 +48,16 @@
               </a>
             </li>
         </ul>
+        <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
+          <li class="text-lg">
+            <form method="POST" action="/login?/out">
+              <button type="submit" class="cursor-pointer">
+                로그아웃 &gt;
+              </button>
+            </form>
+          </li>
+        </ul>
+      </section>
     </div>
 </nav>
 
