@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
-	let { children } = $props();
+    import type { LayoutProps } from './$types';
+	let { children, data } : LayoutProps = $props();
 </script>
 
 <svelte:head>
@@ -20,9 +21,37 @@
     <div class="drawer-side">
         <label for="menu" aria-label="메뉴 닫기" class="drawer-overlay"></label>
         <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
-            <!-- Sidebar content here -->
-            <li>메뉴 1</li>
-            <li>메뉴 2</li>
+            <li class="text-xl">
+              {#if !data}
+              <a href="/login">먼저<br>로그인하세요 &gt;</a>
+              {:else if data?.email}
+              <a href="/manage">{data.email}님<br>반갑습니다</a>
+              {/if}
+            </li>
+            <li class="text-lg">
+              <a href="/">
+                <span class="material-symbols-rounded">home</span>
+                오늘의 식단
+              </a>
+            </li>
+            <li class="text-lg">
+              <a href="/fooddb">
+                <span class="material-symbols-rounded">menu_book</span>
+                음식 찾아보기
+              </a>
+            </li>
+            <li class="text-lg">
+              <a href="/chat">
+                <span class="material-symbols-rounded">chat</span>
+                궁금한 점 물어보기
+              </a>
+            </li>
+            <li class="text-lg">
+              <a href="/update">
+                <span class="material-symbols-rounded">contract_edit</span>
+                신체 정보 갱신하기
+              </a>
+            </li>
         </ul>
     </div>
 </nav>

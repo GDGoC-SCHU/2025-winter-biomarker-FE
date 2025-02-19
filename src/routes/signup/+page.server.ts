@@ -1,8 +1,14 @@
-import type { PageServerLoad } from "./$types";
+import { redirect } from "@sveltejs/kit";
+import type { Actions, PageServerLoad } from "./$types";
 
 interface GenderType { value: string, text: string };
 
-export const load: PageServerLoad = async () => {
+export const load: PageServerLoad = async ({ cookies }) => {
+    const login_data = cookies.get("userId");
+    
+    if (login_data) {
+        redirect(303, "/")
+    }
 
     let genderList: GenderType[] = [
         { value: "male", text: "남성" },
@@ -21,3 +27,21 @@ export const load: PageServerLoad = async () => {
 
     return { genderList: genderList };
 }
+
+export const actions = {
+    default: async ({ cookies, request }) => {
+        const form = await request.formData();
+        const email = form.get("email");
+        const password = form.get("password");
+        const gender = form.get("gender");
+        
+        if (email && email.toString().includes("@") && password && gender) {
+            cookies.set("userId", "tempCookie", { path: "/" });
+            cookies.set("realId", email?.toString(), { path: "/"});
+            return { success: true };
+        } else {
+            return { success: false };
+        }
+
+    }
+} satisfies Actions;
