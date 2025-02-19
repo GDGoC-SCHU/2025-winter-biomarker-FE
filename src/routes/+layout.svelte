@@ -41,12 +41,6 @@
               </a>
             </li>
             <li class="text-lg">
-              <a href="/chat">
-                <span class="material-symbols-rounded">chat</span>
-                궁금한 점 물어보기
-              </a>
-            </li>
-            <li class="text-lg">
               <a href="/update">
                 <span class="material-symbols-rounded">contract_edit</span>
                 신체 정보 갱신하기
