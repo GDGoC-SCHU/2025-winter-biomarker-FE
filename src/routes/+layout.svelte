@@ -18,7 +18,7 @@
     <div class="flex-1">
       <a class="btn btn-ghost text-xl" href="/">HEA</a>
     </div>
-    <div class="drawer-side">
+    <div class="drawer-side z-10">
       <label for="menu" aria-label="메뉴 닫기" class="drawer-overlay"></label>
       <section class="flex justify-between bg-base-200 min-h-full flex-col">
         <ul class="menu text-base-content w-80 p-4">
@@ -26,7 +26,12 @@
               {#if !data || !data.email}
               <a href="/login">먼저<br>로그인하세요 &gt;</a>
               {:else if data?.name}
-              <a href="/manage">{data.name}님<br>반갑습니다</a>
+              <a href="/manage">
+                <span>
+                  <span class="font-bold">{data.name}</span>님
+                  <br>반갑습니다
+                </span>
+              </a>
               {/if}
             </li>
             <li class="text-lg">
