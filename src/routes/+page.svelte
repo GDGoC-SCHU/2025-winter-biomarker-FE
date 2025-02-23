@@ -21,7 +21,7 @@
             </h1>
 
             <div class="collapse collapse-arrow">
-                <input type="radio" name="today-menu" checked />
+                <input type="checkbox" class="peer" checked />
                 <h2 class="collapse-title text-xl">아침</h2>
                 <div class="collapse-content">
                     <ul>
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="collapse collapse-arrow">
-                <input type="radio" name="today-menu" checked />
+                <input type="checkbox" class="peer" />
                 <h2 class="collapse-title text-xl">점심</h2>
                 <div class="collapse-content">
                     <ul>
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="collapse collapse-arrow">
-                <input type="radio" name="today-menu" checked />
+                <input type="checkbox" class="peer" />
                 <h2 class="collapse-title text-xl">저녁</h2>
                 <div class="collapse-content">
                     <ul>
