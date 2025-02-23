@@ -26,7 +26,7 @@
               {#if !data || !data.email}
               <a href="/login">먼저<br>로그인하세요 &gt;</a>
               {:else if data?.name}
-              <a href="/manage">
+              <a href="/update">
                 <span>
                   <span class="font-bold">{data.name}</span>님
                   <br>반갑습니다
