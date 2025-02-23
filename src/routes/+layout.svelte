@@ -25,8 +25,8 @@
             <li class="text-xl">
               {#if !data || !data.email}
               <a href="/login">먼저<br>로그인하세요 &gt;</a>
-              {:else if data?.email}
-              <a href="/manage">{data.email}님<br>반갑습니다</a>
+              {:else if data?.name}
+              <a href="/manage">{data.name}님<br>반갑습니다</a>
               {/if}
             </li>
             <li class="text-lg">

@@ -33,11 +33,13 @@ export const actions = {
         const form = await request.formData();
         const email = form.get("email");
         const password = form.get("password");
+        const name = form.get("name");
         const gender = form.get("gender");
         
-        if (email && email.toString().includes("@") && password && gender) {
+        if (email && email.toString().includes("@") && password && gender && name) {
             cookies.set("userId", "tempCookie", { path: "/" });
             cookies.set("realId", email?.toString(), { path: "/"});
+            cookies.set("name", name?.toString(), { path: "/"});
             return { success: true };
         } else {
             return { success: false };

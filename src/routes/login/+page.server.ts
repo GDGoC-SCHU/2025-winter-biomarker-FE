@@ -16,7 +16,8 @@ export const actions = {
         const form = await request.formData();
         const email = form.get("email");
         const password = form.get("password");
-        
+        // 실제 API 적용 시에는 로그아웃 시 이름 쿠키 삭제 및 사용자 정보 서버에서 불러올 것!
+
         if (email && email.toString().includes("@") && password) {
             cookies.set("userId", "tempCookie", { path: "/" });
             cookies.set("realId", email?.toString(), { path: "/"});
