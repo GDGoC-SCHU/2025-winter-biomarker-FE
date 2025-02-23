@@ -20,10 +20,10 @@
             {/if}
         </div>
         <label for="email" class="fieldset-label">이메일</label>
-        <input name="email" type="email" class="input" placeholder="gdgoc@example.com" />
+        <input name="email" type="email" class="input" placeholder="gdgoc@example.com" required />
         
         <label for="password" class="fieldset-label">암호</label>
-        <input name="password" type="password" class="input" placeholder="타인에게 공개되지 않도록 조심하세요" />
+        <input name="password" type="password" class="input" placeholder="타인에게 공개되지 않도록 조심하세요" required />
 
         {#if form && !form.success}
         <div role="alert" class="alert alert-warning my-2">

@@ -11,10 +11,13 @@
             <p class="text-lg">건강 데이터를 저장하고 관리하세요.</p>
         </div>
         <label for="email" class="fieldset-label">이메일</label>
-        <input type="email" class="input" placeholder="gdgoc@example.com" name="email" />
+        <input type="email" class="input" placeholder="gdgoc@example.com" name="email" required />
+
+        <label for="name" class="fieldset-label">이름</label>
+        <input type="text" class="input" placeholder="지디지" name="name" required />
         
         <label for="password" class="fieldset-label">암호</label>
-        <input name="password" type="password" class="input" placeholder="타인에게 공개되지 않도록 조심하세요" />
+        <input name="password" type="password" class="input" placeholder="타인에게 공개되지 않도록 조심하세요" required />
 
         <label for="genderset" class="fieldset-label">성별</label>
         <fieldset name="genderset">
