@@ -40,6 +40,7 @@ export const actions = {
             cookies.set("userId", "tempCookie", { path: "/" });
             cookies.set("realId", email?.toString(), { path: "/"});
             cookies.set("name", name?.toString(), { path: "/"});
+            cookies.set("gender", gender?.toString(), { path: "/"});
             return { success: true };
         } else {
             return { success: false };
