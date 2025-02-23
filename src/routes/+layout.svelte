@@ -50,11 +50,13 @@
         </ul>
         <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
           <li class="text-lg">
+            {#if data?.email}
             <form method="POST" action="/login?/out">
               <button type="submit" class="cursor-pointer">
                 로그아웃 &gt;
               </button>
             </form>
+            {/if}
           </li>
         </ul>
       </section>
