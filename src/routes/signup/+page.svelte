@@ -47,6 +47,7 @@
         <h1>회원가입 성공!</h1>
         <p>이제 서비스를 이용하실 수 있어요.</p>
         <a class="btn btn-neutral mt-4 w-full" href="/">홈으로</a>
+        <a class="btn btn-neutral mt-2 w-full" href="/update">신체 정보 등록하기</a>
     </section>
     {/if}
 </main>
