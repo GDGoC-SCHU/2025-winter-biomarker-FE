@@ -835,10 +835,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^5.0.0-beta.7":
-  version: 5.0.0-beta.7
-  resolution: "daisyui@npm:5.0.0-beta.7"
-  checksum: 10c0/ae5553b5ffe6261329c90a92b4eb94c7ad220e90b90c1ce84fac23ececbae578149b84059b1b0495b14e12210224eff84ca80f54d59bf49800073cc2f14d4ce2
+"daisyui@npm:^5.0.0-beta.8":
+  version: 5.0.0-beta.8
+  resolution: "daisyui@npm:5.0.0-beta.8"
+  checksum: 10c0/5868b86120b1efe8486180710ddb463a0cb3f4a4e2eeb935f02b283f18c30b098d1177d75c8b7c5c61058b03cfb72820f4983e543569a9b5e847bf3a011e06fa
   languageName: node
   linkType: hard
 
@@ -1122,7 +1122,7 @@ __metadata:
     "@sveltejs/vite-plugin-svelte": "npm:^5.0.0"
     "@tailwindcss/forms": "npm:^0.5.10"
     "@tailwindcss/postcss": "npm:4.0.0"
-    daisyui: "npm:^5.0.0-beta.7"
+    daisyui: "npm:^5.0.0-beta.8"
     svelte: "npm:^5.0.0"
     svelte-check: "npm:^4.0.0"
     tailwindcss: "npm:4.0.0"
