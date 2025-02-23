@@ -19,10 +19,10 @@
             </div>
             {/if}
         </div>
-        <label for="email" class="fieldset-label">이메일</label>
+        <label for="email" class="fieldset-label text-base">이메일</label>
         <input name="email" type="email" class="input" placeholder="gdgoc@example.com" required />
         
-        <label for="password" class="fieldset-label">암호</label>
+        <label for="password" class="fieldset-label text-base">암호</label>
         <input name="password" type="password" class="input" placeholder="타인에게 공개되지 않도록 조심하세요" required />
 
         {#if form && !form.success}
@@ -34,8 +34,8 @@
         </div>
         {/if}
         
-        <button class="btn btn-neutral mt-4">로그인</button>
-        <a href="/signup" class="link text-center m-2">계정이 없으신가요?</a>
+        <button class="btn btn-neutral mt-4 text-base">로그인</button>
+        <a href="/signup" class="link text-center m-2 text-base">계정이 없으신가요?</a>
     </form>
     {/if}
 

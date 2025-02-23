@@ -58,9 +58,9 @@
                         <li class="text-lg font-normal flex justify-between">
                             <span class="flex items-center gap-2">
                                 <span class="badge badge-secondary text-base">밥류</span>
-                                <span>김밥채소</span>    
+                                <span>잡채밥</span>    
                             </span>
-                            <span class="ms-1 text-base text-gray-400">105kcal</span>
+                            <span class="ms-1 text-base text-gray-400">113kcal</span>
                         </li>
                     </ul>
                 </div>

@@ -8,18 +8,18 @@
     <form class="fieldset w-fit" method="POST">
         <div>
             <h1 class="text-3xl">회원가입</h1>
-            <p class="text-lg">건강 데이터를 저장하고 관리하세요.</p>
+            <p class="text-base">건강 데이터를 저장하고 관리하세요.</p>
         </div>
-        <label for="email" class="fieldset-label">이메일</label>
+        <label for="email" class="fieldset-label text-base">이메일</label>
         <input type="email" class="input" placeholder="gdgoc@example.com" name="email" required />
 
-        <label for="name" class="fieldset-label">이름</label>
+        <label for="name" class="fieldset-label text-base">이름</label>
         <input type="text" class="input" placeholder="지디지" name="name" required />
         
-        <label for="password" class="fieldset-label">암호</label>
+        <label for="password" class="fieldset-label text-base">암호</label>
         <input name="password" type="password" class="input" placeholder="타인에게 공개되지 않도록 조심하세요" required />
 
-        <label for="genderset" class="fieldset-label">성별</label>
+        <label for="genderset" class="fieldset-label text-base">성별</label>
         <fieldset name="genderset">
             {#each data.genderList as gitem}
                 <input name="gender" id={gitem.value} value={gitem.value} type="radio" class="radio">
@@ -36,7 +36,7 @@
         </div>
         {/if}
 
-        <button type="submit" class="btn btn-neutral mt-4">가입하기</button>
+        <button type="submit" class="btn btn-neutral mt-4 text-base">가입하기</button>
         <a href="/login" class="link text-center m-2">계정을 갖고 계신가요?</a>
     </form>
     {/if}
