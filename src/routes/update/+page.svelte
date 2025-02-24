@@ -12,37 +12,37 @@
         </div>
         <label for="height" class="fieldset-label text-base">키</label>
         <div class="flex w-full items-center">
-            <input type="number" class="input text-base flex-1" name="height" required />
+            <input type="number" step="0.01" class="input text-base flex-1" name="height" required />
             <span class="ms-1 text-base">cm</span>
         </div>
 
         <label for="weight" class="fieldset-label text-base">몸무게</label>
         <div class="flex w-full items-center">
-            <input type="number" class="input text-base flex-1" name="weight" required />
+            <input type="number" step="0.01" class="input text-base flex-1" name="weight" required />
             <span class="ms-1 text-base">kg</span>
         </div>
 
         <label for="body_fat_percentage" class="fieldset-label text-base">체지방률</label>
         <div class="flex w-full items-center">
-            <input type="number" class="input text-base flex-1" name="body_fat_percentage" required />
+            <input type="number" step="0.01" class="input text-base flex-1" name="body_fat_percentage" required />
             <span class="ms-1 text-base">%</span>
         </div>
 
         <label for="skeletal_muscle_mass" class="fieldset-label text-base">골격근량</label>
         <div class="flex w-full items-center">
-            <input type="number" class="input text-base flex-1" name="skeletal_muscle_mass" required />
+            <input type="number" step="0.01" class="input text-base flex-1" name="skeletal_muscle_mass" required />
             <span class="ms-1 text-base">kg</span>
         </div>
         
         <label for="bmr" class="fieldset-label text-base">기초대사량</label>
         <div class="flex w-full items-center">
-            <input type="number" class="input text-base flex-1" name="bmr" required />
+            <input type="number" step="0.01" class="input text-base flex-1" name="bmr" required />
             <span class="ms-1 text-base">kcal</span>
         </div>
 
         <label for="body_fat_mass" class="fieldset-label text-base">체지방량</label>
         <div class="flex w-full items-center">
-            <input type="number" class="input text-base flex-1" name="body_fat_mass" required />
+            <input type="number" step="0.01" class="input text-base flex-1" name="body_fat_mass" required />
             <span class="ms-1 text-base">kg</span>
         </div>
 
