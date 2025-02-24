@@ -24,7 +24,10 @@
         <ul class="menu text-base-content w-80 p-4">
             <li class="text-xl">
               {#if !data || !data.email}
-              <a href="/login">먼저<br>로그인하세요 &gt;</a>
+              <a href="/login" class="flex items-end gap-0">
+                먼저<br>로그인하세요
+                <span class="material-symbols-rounded mb-0.25">chevron_right</span>
+              </a>
               {:else if data?.name}
               <a href="/update">
                 <span>
