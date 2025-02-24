@@ -23,7 +23,7 @@
       <section class="flex justify-between bg-base-200 min-h-full flex-col">
         <ul class="menu text-base-content w-80 p-4">
             <li class="text-xl">
-              {#if !data || !data.email}
+              {#if !data || !data.name}
               <a href="/login" class="flex items-end gap-0">
                 먼저<br>로그인하세요
                 <span class="material-symbols-rounded mb-0.25">chevron_right</span>
@@ -58,10 +58,11 @@
         </ul>
         <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4">
           <li class="text-lg">
-            {#if data?.email}
+            {#if data?.name}
             <form method="POST" action="/login?/out">
-              <button type="submit" class="cursor-pointer">
-                로그아웃 &gt;
+              <button type="submit" class="cursor-pointer flex items-end gap-0">
+                로그아웃
+                <span class="material-symbols-rounded mb-0.25">chevron_right</span>
               </button>
             </form>
             {/if}
