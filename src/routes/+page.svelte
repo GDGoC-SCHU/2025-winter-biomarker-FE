@@ -22,45 +22,88 @@
 
             <div class="collapse collapse-arrow">
                 <input type="checkbox" class="peer" checked />
-                <h2 class="collapse-title text-xl">아침</h2>
+                <h2 class="collapse-title text-xl">
+                    아침
+                    <span class="ms-1 text-base text-gray-400">약 450kcal</span>
+                </h2>
                 <div class="collapse-content">
                     <ul>
                         <li class="text-lg font-normal flex justify-between">
                             <span class="flex items-center gap-2">
-                                <span class="badge badge-secondary text-base">밥류</span>
-                                <span>김밥채소</span>    
+                                <span class="badge badge-secondary text-base">120g</span>
+                                <span>북어구이</span>    
                             </span>
-                            <span class="ms-1 text-base text-gray-400">105kcal</span>
+                        </li>
+                        <li class="text-lg font-normal flex justify-between">
+                            <span class="flex items-center gap-2">
+                                <span class="badge badge-secondary text-base">1컵</span>
+                                <span>찐밥</span>    
+                            </span>
+                        </li>
+                        <li class="text-lg font-normal flex justify-between">
+                            <span class="flex items-center gap-2">
+                                <span class="badge badge-secondary text-base">1/2컵</span>
+                                <span>무생채</span>    
+                            </span>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow">
+                <input type="checkbox" class="peer" />
+                <h2 class="collapse-title text-xl">
+                    점심
+                    <span class="ms-1 text-base text-gray-400">약 500kcal</span>
+                </h2>
+                <div class="collapse-content">
+                    <ul>
+                        <li class="text-lg font-normal flex justify-between">
+                            <span class="flex items-center gap-2">
+                                <span class="badge badge-secondary text-base">1컵</span>
+                                <span>오징어채무침</span>    
+                            </span>
+                        </li>
+                        <li class="text-lg font-normal flex justify-between">
+                            <span class="flex items-center gap-2">
+                                <span class="badge badge-secondary text-base">1컵</span>
+                                <span>잡곡밥</span>    
+                            </span>
+                        </li>
+                        <li class="text-lg font-normal flex justify-between">
+                            <span class="flex items-center gap-2">
+                                <span class="badge badge-secondary text-base">1컵</span>
+                                <span>미역국</span>    
+                            </span>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="collapse collapse-arrow">
                 <input type="checkbox" class="peer" />
-                <h2 class="collapse-title text-xl">점심</h2>
+                <h2 class="collapse-title text-xl">
+                    저녁
+                    <span class="ms-1 text-base text-gray-400">약 550kcal</span>
+                </h2>
                 <div class="collapse-content">
                     <ul>
                         <li class="text-lg font-normal flex justify-between">
                             <span class="flex items-center gap-2">
-                                <span class="badge badge-secondary text-base">밥류</span>
-                                <span>김밥채소</span>    
+                                <span class="badge badge-secondary text-base">120g</span>
+                                <span>닭고기볶음</span>    
                             </span>
-                            <span class="ms-1 text-base text-gray-400">105kcal</span>
                         </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="collapse collapse-arrow">
-                <input type="checkbox" class="peer" />
-                <h2 class="collapse-title text-xl">저녁</h2>
-                <div class="collapse-content">
-                    <ul>
                         <li class="text-lg font-normal flex justify-between">
                             <span class="flex items-center gap-2">
-                                <span class="badge badge-secondary text-base">밥류</span>
-                                <span>잡채밥</span>    
+                                <span class="badge badge-secondary text-base">1컵</span>
+                                <span>현미밥</span>    
                             </span>
-                            <span class="ms-1 text-base text-gray-400">113kcal</span>
+                        </li>
+                        <li class="text-lg font-normal flex justify-between">
+                            <span class="flex items-center gap-2">
+                                <span class="badge badge-secondary text-base">1/2컵</span>
+                                <span>김치</span>    
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -73,11 +116,11 @@
         <div class="card w-full shadow-sm card-body my-4 p-4">
             <h1 class="text-xl">운동도 함께 해보세요</h1>
             <ul>
-                <li>
-                    <a href="https://www.youtube.com/watch?v=h66Ua2mYbRk" target="_blank" class="btn btn-ghost w-full justify-between text-lg font-normal">
-                        <span>국민체조</span>
-                        <span class="material-symbols-rounded">chevron_right</span>
-                    </a>
+                <li class="w-full m-2 text-lg font-normal">
+                    주 3회 이상의 중강도 유산소 운동(달리기, 수영, 자전거 타기) 30분 이상
+                </li>
+                <li class="w-full m-2 text-lg font-normal">
+                    주 2회 이상의 저항 운동(웨이트 트레이닝, 체중 운동) 20-30분 이상
                 </li>
             </ul>
         </div>
