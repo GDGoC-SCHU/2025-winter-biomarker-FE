@@ -11,6 +11,7 @@
         if (searchBox) {
             searchBox.checked = false;
             loading = true;
+            pageNo = 0;
         }
     }
 </script>
