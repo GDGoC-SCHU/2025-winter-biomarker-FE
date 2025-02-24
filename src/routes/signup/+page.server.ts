@@ -1,5 +1,6 @@
 import { redirect } from "@sveltejs/kit";
 import type { Actions, PageServerLoad } from "./$types";
+import { env } from "$env/dynamic/private";
 
 interface GenderType { value: string, text: string };
 
@@ -13,7 +14,7 @@ export const load: PageServerLoad = async ({ cookies }) => {
     let genderList: GenderType[] = [
         { value: "male", text: "남성" },
         { value: "female", text: "여성" },
-        { value: "undefined", text: "기타/선택하지 않음"}
+        { value: "other", text: "기타/선택하지 않음"}
     ];
 
     function shuffleGenderSelector(array: GenderType[]) {
@@ -35,13 +36,35 @@ export const actions = {
         const password = form.get("password");
         const name = form.get("name");
         const gender = form.get("gender");
-        
+
         if (email && email.toString().includes("@") && password && gender && name) {
-            cookies.set("userId", "tempCookie", { path: "/" });
-            cookies.set("realId", email?.toString(), { path: "/"});
-            cookies.set("name", name?.toString(), { path: "/"});
-            cookies.set("gender", gender?.toString(), { path: "/"});
-            return { success: true };
+            const req = await fetch(`${env.BACKEND_ADDRESS}/auth/signup`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    name: name,
+                    email: email,
+                    password: password,
+                    gender: gender
+                })
+            })
+
+            if (req.ok) {
+                const data = await req.json();
+                console.log(data);
+                
+                cookies.set("userId", data.userId, { path: "/" });
+                cookies.set("name", name?.toString(), { path: "/"});
+                cookies.set("gender", gender?.toString(), { path: "/"});    
+                return { success: true };
+            } else {
+                const data = await req.json();
+                console.log(data);
+                
+                return { success: false };
+            }
         } else {
             return { success: false };
         }
