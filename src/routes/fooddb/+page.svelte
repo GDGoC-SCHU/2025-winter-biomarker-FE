@@ -78,7 +78,7 @@
                         <h2 class="text-lg">{item.foodNm}</h2>
                     </div>
                     <p>
-                        <span class="text-base text-gray-400">{item.foodOriginNm} | {item.nutConSrtrQua}당 {item.enerc}kcal</span>
+                        <span class="text-base text-gray-400">{item.foodOriginNm} | {item.nutConSrtrQua}당 {item.enerc}kcal | {item.foodSize}</span>
                     </p>
                 </div>
             </li>
