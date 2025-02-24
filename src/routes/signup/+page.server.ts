@@ -53,15 +53,12 @@ export const actions = {
 
             if (req.ok) {
                 const data = await req.json();
-                console.log(data);
                 
                 cookies.set("userId", data.userId, { path: "/" });
-                cookies.set("name", name?.toString(), { path: "/"});
-                cookies.set("gender", gender?.toString(), { path: "/"});    
+                cookies.set("name", name?.toString(), { path: "/"}); 
                 return { success: true };
             } else {
                 const data = await req.json();
-                console.log(data);
                 
                 return { success: false };
             }

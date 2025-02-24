@@ -32,10 +32,9 @@ export const actions = {
 
             if (req.ok) {
                 const data = await req.json();
-                
-                console.log(data.userId);
 
                 cookies.set("userId", data.userId, { path: "/" });
+                cookies.set("name", data.name, { path: "/" })
                 redirect(303, "/");
             }
         }
